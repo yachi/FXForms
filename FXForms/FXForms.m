@@ -1888,7 +1888,7 @@ static BOOL *FXFormSetValueForKey(id<FXForm> form, id value, NSString *key)
     {
         self.textField.autocorrectionType = UITextAutocorrectionTypeDefault;
         self.textField.autocapitalizationType = UITextAutocapitalizationTypeSentences;
-        self.textField.keyboardType = UIKeyboardTypeAlphabet;
+        self.textField.keyboardType = UIKeyboardTypeDefault;
     }
     else if ([self.field.type isEqualToString:FXFormFieldTypeNumber] || [self.field.type isEqualToString:FXFormFieldTypeInteger])
     {
@@ -1900,7 +1900,7 @@ static BOOL *FXFormSetValueForKey(id<FXForm> form, id value, NSString *key)
     {
         self.textField.autocorrectionType = UITextAutocorrectionTypeNo;
         self.textField.autocapitalizationType = UITextAutocapitalizationTypeNone;
-        self.textField.keyboardType = UIKeyboardTypeAlphabet;
+        self.textField.keyboardType = UIKeyboardTypeDefault;
         self.textField.secureTextEntry = YES;
     }
     else if ([self.field.type isEqualToString:FXFormFieldTypeEmail])
@@ -2087,7 +2087,7 @@ static BOOL *FXFormSetValueForKey(id<FXForm> form, id value, NSString *key)
     {
         self.textView.autocorrectionType = UITextAutocorrectionTypeDefault;
         self.textView.autocapitalizationType = UITextAutocapitalizationTypeSentences;
-        self.textView.keyboardType = UIKeyboardTypeAlphabet;
+        self.textView.keyboardType = UIKeyboardTypeDefault;
     }
     else if ([self.field.type isEqualToString:FXFormFieldTypeNumber] || [self.field.type isEqualToString:FXFormFieldTypeInteger])
     {
@@ -2099,7 +2099,7 @@ static BOOL *FXFormSetValueForKey(id<FXForm> form, id value, NSString *key)
     {
         self.textView.autocorrectionType = UITextAutocorrectionTypeNo;
         self.textView.autocapitalizationType = UITextAutocapitalizationTypeNone;
-        self.textView.keyboardType = UIKeyboardTypeAlphabet;
+        self.textView.keyboardType = UIKeyboardTypeDefault;
         self.textView.secureTextEntry = YES;
     }
     else if ([self.field.type isEqualToString:FXFormFieldTypeEmail])
